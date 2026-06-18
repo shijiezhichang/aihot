@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AI Hot Dashboard - Real-time AI news aggregation and analytics platform. Track AI trends, tools, and insights.">
+    <meta name="keywords" content="AI dashboard, AI news, real-time AI, AI trends, artificial intelligence">
+    <meta name="author" content="AI Hot Dashboard">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://aihot.globalxyz.xyz/" />
+    <link rel="alternate" hreflang="en" href="https://aihot.globalxyz.xyz/" />
+    <link rel="alternate" hreflang="zh-CN" href="https://aihot.globalxyz.xyz/" />
+    <link rel="alternate" hreflang="x-default" href="https://aihot.globalxyz.xyz/" />
+    <meta property="og:title" content="AI Hot Dashboard - Real-time AI Intelligence">
+    <meta property="og:description" content="Real-time AI news aggregation and analytics platform">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aihot.globalxyz.xyz/">
+    <meta property="og:image" content="https://aihot.globalxyz.xyz/og-image.png">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="AI Hot Dashboard - Real-time AI Intelligence">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "AI Hot Dashboard",
+        "description": "Real-time AI news aggregation and analytics platform. Track AI trends, tools, and insights.",
+        "url": "https://aihot.globalxyz.xyz/",
+        "applicationCategory": "Application",
+        "operatingSystem": "Web",
+        "inLanguage": "en"
+    }
+    </script>
+    <title>AI Hot Dashboard - Real-time AI Intelligence</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f172a; color: #e2e8f0; min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+        .container { max-width: 600px; text-align: center; padding: 40px 20px; }
+        h1 { font-size: 2.5em; margin-bottom: 16px; background: linear-gradient(135deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        p { color: #94a3b8; font-size: 1.1em; margin-bottom: 30px; }
+        .btn { display: inline-block; background: linear-gradient(135deg, #3b82f6, #8b5cf6); color: #fff; padding: 14px 32px; border-radius: 12px; text-decoration: none; font-weight: 600; font-size: 1.1em; transition: transform 0.2s; }
+        .btn:hover { transform: translateY(-2px); }
+        .lang-switch { position: fixed; top: 15px; right: 15px; z-index: 9999; display: flex; border-radius: 20px; overflow: hidden; box-shadow: 0 2px 12px rgba(0,0,0,.3); font-size: 13px; }
+        .lang-switch button { border: none; padding: 6px 14px; cursor: pointer; font-weight: 500; transition: all .2s; }
+        .lang-switch .lang-en { background: #1a1a2e; color: #fff; }
+        .lang-switch .lang-zh { background: #fff; color: #333; border: 1px solid #ddd; }
+        .lang-switch .lang-en.active { background: #3b82f6; }
+        .lang-switch .lang-zh.active { background: #ef4444; color: #fff; }
+        .features { display: flex; gap: 20px; justify-content: center; margin-top: 30px; flex-wrap: wrap; }
+        .feature { background: rgba(255,255,255,0.05); padding: 16px 20px; border-radius: 12px; }
+        .feature strong { display: block; margin-bottom: 4px; color: #fff; }
+        .feature span { color: #64748b; font-size: 0.9em; }
+    </style>
+</head>
+<body>
+    <div class="lang-switch">
+        <button class="lang-en active" onclick="setLang('en')">English</button>
+        <button class="lang-zh" onclick="setLang('zh')">中文</button>
+    </div>
+    <div class="container">
+        <h1 class="en-content">🤖 AI Hot Dashboard</h1>
+        <h1 class="zh-content" style="display:none">🤖 AI 实时大屏</h1>
+        <p class="en-content">Real-time AI news aggregation and analytics platform. Track the latest AI trends, tools, and insights.</p>
+        <p class="zh-content" style="display:none">实时AI资讯聚合与分析平台。追踪最新AI趋势、工具和洞察。</p>
+        <a href="/streamlit" class="en-content btn">🚀 Open Dashboard</a>
+        <a href="/streamlit" class="zh-content btn" style="display:none">🚀 打开大屏</a>
+        <div class="features">
+            <div class="feature">
+                <strong class="en-content">📰 AI News</strong>
+                <strong class="zh-content" style="display:none">📰 AI 资讯</strong>
+                <span class="en-content">Daily curated</span>
+                <span class="zh-content" style="display:none">每日精选</span>
+            </div>
+            <div class="feature">
+                <strong class="en-content">📊 Analytics</strong>
+                <strong class="zh-content" style="display:none">📊 数据分析</strong>
+                <span class="en-content">Real-time charts</span>
+                <span class="zh-content" style="display:none">实时图表</span>
+            </div>
+            <div class="feature">
+                <strong class="en-content">🔄 Auto Update</strong>
+                <strong class="zh-content" style="display:none">🔄 自动更新</strong>
+                <span class="en-content">Every 30 min</span>
+                <span class="zh-content" style="display:none">每30分钟</span>
+            </div>
+        </div>
+    </div>
+    <script>
+    function setLang(lang) {
+        document.querySelectorAll('.en-content').forEach(el => el.style.display = lang === 'en' ? '' : 'none');
+        document.querySelectorAll('.zh-content').forEach(el => el.style.display = lang === 'zh' ? '' : 'none');
+        document.querySelectorAll('.lang-switch button').forEach(b => b.classList.remove('active'));
+        document.querySelector('.lang-switch .lang-' + lang).classList.add('active');
+    }
+    </script>
+</body>
+</html>

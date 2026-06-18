@@ -1,0 +1,27 @@
+User-agent: *
+Allow: /
+Disallow: /scripts/
+Disallow: /api/
+Disallow: /tools/
+
+# Sitemaps
+Sitemap: https://ai-daily.globalxyz.xyz/sitemap.xml
+Sitemap: https://english-interview.globalxyz.xyz/sitemap.xml
+Sitemap: https://chuangye.globalxyz.xyz/sitemap.xml
+Sitemap: https://indie.globalxyz.xyz/sitemap.xml
+Sitemap: https://nocode.globalxyz.xyz/sitemap.xml
+Sitemap: https://cn-seo.globalxyz.xyz/sitemap.xml
+Sitemap: https://aihot.globalxyz.xyz/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
